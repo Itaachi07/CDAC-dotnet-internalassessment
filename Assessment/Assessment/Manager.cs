@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-    internal class Program
+    public class Manager
     {
-        static void Main(string[] args)
+        Manager()
         {
-
-
+            Console.WriteLine("Hello... this is manager");
         }
     }
 }
