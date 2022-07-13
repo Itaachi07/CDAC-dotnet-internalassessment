@@ -6,43 +6,40 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-    public class Employee
+    public class Employee 
     {
-        private int id ;
-        private string name ;
-        private int deptID;
-        private int basic;
+        private int _id ;
+        private string _name ;
+        private string _deptID;
+        private int _basic;
 
-        public int _basic
+        public int basic
         {
             get { return basic; }
             set { basic = value; }
         }
 
 
-        public int _deptID
+        public string deptID
         {
             get { return deptID; }
             set { deptID = value; }
         }
 
 
-        public int _id
+        public int id
         {
             get { return id ; }
             set { id  = value; }
         }
 
-        public String _name
+        public string name
         {
             get { return name; }
             set { name = value; }
         }
 
 
-        Employee()
-        {
-            Console.WriteLine("Hello.. this is Employee")
-        }
+        
     }
 }

@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-    public class Worker
+    public class Worker :  Employee
     {
-        Worker()
+        private int _hoursWorked;
+        private double _hourlyRate;
+
+        public double  hourlyRate
         {
-            Console.WriteLine("Hello.. this is Worker");
+            get { return _hourlyRate; }
+            set { _hourlyRate = value; }
         }
+
+
+        public int hoursWorked
+        {
+            get { return _hoursWorked; }
+            set { _hoursWorked = value; }
+        }
+
     }
 }

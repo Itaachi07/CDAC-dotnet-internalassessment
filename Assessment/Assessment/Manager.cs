@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-    public class Manager
+    public class Manager  :  Employee
     {
-        Manager()
+        private double _performanceBonus;
+
+        public double performanceBonus
         {
-            Console.WriteLine("Hello... this is manager");
+            get { return _performanceBonus; }
+            set { _performanceBonus = value; }
         }
+
+
     }
 }
