@@ -11,7 +11,7 @@ namespace Assessment
         private double _performanceBonus;
 
         public double performanceBonus
-        {
+        {   
             get { return _performanceBonus; }
             set { _performanceBonus = value; }
         }

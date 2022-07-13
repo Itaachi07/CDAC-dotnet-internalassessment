@@ -15,31 +15,39 @@ namespace Assessment
 
         public int basic
         {
-            get { return basic; }
-            set { basic = value; }
+            get { return _basic; }
+            set { _basic = value; }
         }
 
 
         public string deptID
         {
-            get { return deptID; }
-            set { deptID = value; }
+            get { return _deptID; }
+            set { _deptID = value; }
         }
 
 
         public int id
         {
-            get { return id ; }
-            set { id  = value; }
+            get { return _id ; }
+            set { _id  = value; }
         }
 
         public string name
         {
-            get { return name; }
-            set { name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
-
+        public Employee()
+        {
+            id = 0;
+        }
+        public int idIncrement()
+        {
+            id = id + 1;
+            return id;
+        }
         
     }
 }

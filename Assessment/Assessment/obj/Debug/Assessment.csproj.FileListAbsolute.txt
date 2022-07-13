@@ -1,0 +1,8 @@
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\obj\Debug\Assessment.csproj.AssemblyReference.cache
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\obj\Debug\Assessment.csproj.SuggestedBindingRedirects.cache
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\obj\Debug\Assessment.csproj.CoreCompileInputs.cache
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\bin\Debug\Assessment.exe.config
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\bin\Debug\Assessment.exe
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\bin\Debug\Assessment.pdb
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\obj\Debug\Assessment.exe
+C:\Z Programing Languages\Git\dotnet\internal_assessment\Assessment\Assessment\obj\Debug\Assessment.pdb
