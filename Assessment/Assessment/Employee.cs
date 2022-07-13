@@ -8,12 +8,35 @@ namespace Assessment
 {
     public class Employee
     {
-        private int myVar;
+        private int id ;
+        private string name ;
+        private int deptID;
+        private int basic;
 
-        public int MyProperty
+        public int _basic
         {
-            get { return myVar; }
-            set { myVar = value; }
+            get { return basic; }
+            set { basic = value; }
+        }
+
+
+        public int _deptID
+        {
+            get { return deptID; }
+            set { deptID = value; }
+        }
+
+
+        public int _id
+        {
+            get { return id ; }
+            set { id  = value; }
+        }
+
+        public String _name
+        {
+            get { return name; }
+            set { name = value; }
         }
 
 
