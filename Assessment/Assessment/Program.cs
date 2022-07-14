@@ -14,8 +14,8 @@ namespace Assessment
             int f_id = 0;
             ArrayList arr_emp = new ArrayList();
 
-            Manager  manager1 = new Manager();
-            Worker worker1 = new Worker();
+            //Manager  manager1 = new Manager();
+            //Worker worker1 = new Worker();
             int choice;
             do{
             Console.WriteLine("*****************************\n");
@@ -31,16 +31,22 @@ namespace Assessment
             switch (choice)
             {
                 case 1:
-                        manager1 = new Manager();
+                       Manager manager1 = new Manager();
                         ++f_id;
                         manager1.id = f_id;
                         arr_emp.Add(manager1);
 
                     Console.WriteLine("Manager Hired \n\n");
                     break;
+
                 case 2:
+                        Worker worker1 = new Worker();
+                        ++f_id;
+                        worker1.id = f_id;
+                        arr_emp.Add(worker1);
                     Console.WriteLine("worker hired \n\n");
                     break ;
+
                 case 3:
                     Console.WriteLine("all empl \n\n");
                     break;
