@@ -11,9 +11,9 @@ namespace Assessment
         private int _id ;
         private string _name ;
         private string _deptID;
-        private int _basic;
+        private double _basic;
 
-        public int basic
+        public double basic
         {
             get { return _basic; }
             set { _basic = value; }
