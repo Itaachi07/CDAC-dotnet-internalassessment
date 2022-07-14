@@ -24,5 +24,35 @@ namespace Assessment
             set { _hoursWorked = value; }
         }
 
+        protected override void acceptEmployee()
+        {
+            Console.WriteLine("Enter Employee Name : ");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter Depatment ID :");
+            deptID = Console.ReadLine();
+            Console.WriteLine("Enter Employee basic salary :");
+            basic = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter hours worked : ");
+            hoursWorked = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter hourly rate : ");
+            hourlyRate = Convert.ToDouble(Console.ReadLine());
+        }
+
+        protected override double computeNetSalary()
+        {
+            return (basic + (hourlyRate*hoursWorked));
+        }
+
+        public Worker()
+        {
+            acceptEmployee();
+        }
+
+        public override string ToString()
+        {
+            return "[Worker Id = " + id + ", Name = " + name + ", Department = " + deptID + ", " +
+                "Net Salary = " + computeNetSalary() + ", Hourly rate = " + hourlyRate + "]";
+
+        }
     }
 }

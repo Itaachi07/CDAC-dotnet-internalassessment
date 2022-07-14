@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-    public class Employee 
+   abstract public class Employee 
     {
         private int _id ;
         private string _name ;
@@ -43,11 +43,8 @@ namespace Assessment
         {
             id = 0;
         }
-        public int idIncrement()
-        {
-            id = id + 1;
-            return id;
-        }
-        
+
+        protected abstract void acceptEmployee();
+        protected abstract double computeNetSalary();
     }
 }
