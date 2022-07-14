@@ -19,13 +19,13 @@ namespace Assessment
             int choice;
             do{
             Console.WriteLine("*****************************\n");
-            Console.WriteLine("select Your choice");
+            Console.WriteLine("Enter Your choice");
             Console.WriteLine("1. Hire manager");
             Console.WriteLine("2. Hire Worker");
             Console.WriteLine("3. Display all employee");
             Console.WriteLine("4. update basic salary");
             Console.WriteLine("5. Exit\n");
-            Console.WriteLine("*****************************\n");
+            Console.WriteLine("*****************************");
             choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice)
@@ -48,7 +48,14 @@ namespace Assessment
                     break ;
 
                 case 3:
-                    Console.WriteLine("all empl \n\n");
+                        Console.WriteLine("All Employee List");
+                        foreach (Object obj in arr_emp)
+                            {
+                                Employee emp = (Employee)obj;
+                            Console.WriteLine(emp.ToString());
+
+                            }
+                    Console.WriteLine("All Employee List \n\n");
                     break;
                 case 4:   
                     Console.WriteLine("update \n\n");
