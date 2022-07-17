@@ -57,10 +57,46 @@ namespace Assessment
                             }
                     Console.WriteLine("All Employee List \n\n");
                     break;
-                case 4:   
-                    Console.WriteLine("update \n\n");
-                    break;
-                default: 
+                case 4:
+                        Console.WriteLine("Enter Employee id which basic salary do you want to update : ");
+                        int eid = Convert.ToInt32(Console.ReadLine());
+                        for (int i = 0; i < arr_emp.Count; i++)
+                        {
+
+                            if (arr_emp[i] is Worker)
+                            {
+                                Worker w = (Worker)arr_emp[i];
+                                if (w.id == eid)
+                                {
+                                    Console.WriteLine("Enter changed basic salary for " + w.id + " : ");
+                                    w.basic = Convert.ToDouble(Console.ReadLine());
+                                    arr_emp.RemoveAt(i);
+                                    arr_emp.Insert(i, w);
+                                    Console.WriteLine(w.ToString());
+                                    break;
+                                }
+                            }
+                            if (arr_emp[i] is Manager)
+                            {
+                                Manager m = (Manager)arr_emp[i];
+                                if (m.id == eid)
+                                {
+                                    Console.WriteLine("Enter changed basic salary for " + m.id + " : ");
+                                    m.basic = Convert.ToDouble(Console.ReadLine());
+                                    arr_emp.RemoveAt(i);
+
+                                    arr_emp.Insert(i, m);
+                                    Console.WriteLine(m.ToString());
+                                    break;
+
+                                }
+                            }
+
+
+                        }
+                        Console.WriteLine("Basic salary updated"); break;
+
+                    default: 
                     break;
               }
                 if (choice >= 5)
