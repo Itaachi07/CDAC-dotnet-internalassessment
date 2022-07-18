@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assessment
 {
-   abstract public class Employee 
+   abstract public class Employee  //Abstract  class
     {
         private int _id ;
         private string _name ;
@@ -44,6 +44,7 @@ namespace Assessment
             id = 0;
         }
 
+        //Abstract  methods with no body....  body is in  derived class 
         protected abstract void acceptEmployee();
         protected abstract double computeNetSalary();
     }
